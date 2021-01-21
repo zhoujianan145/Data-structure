@@ -181,8 +181,7 @@ void PrintMaxTopK(HpDataType* a, int n, int k)
 		
 		if (a[i]>php->_a[0])
 		{
-			//最开始把HpDataType ret = HeapTop(&hp);放在了这里，找了半天，实际原因很简单，每次变的是ret，而不是实际堆顶的数据
-			//放在这里每次都初始化一次，自然就出错了
+			
 			php->_a[0] = a[i];
 			AdjustDown(php->_a, k, 0);
 		}
