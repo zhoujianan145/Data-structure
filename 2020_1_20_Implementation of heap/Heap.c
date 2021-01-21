@@ -12,7 +12,7 @@ void HeapPrint(Heap* hp)
 	int i;
 	for (i = 0; i < hp->_size; ++i)
 	{
-		printf("%d ", hp->_a[i]);
+		printf("%d", hp->_a[i]);
 	}
 	printf("\n");
 }
