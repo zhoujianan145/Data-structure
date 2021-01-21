@@ -179,15 +179,15 @@ void PrintMaxTopK(HpDataType* a, int n, int k)
 	for (int i = k; i < n; i++)
 	{
 		
-		if (a[i]>php->_a[0])
+		if (a[i]>hp._a[0])
 		{
 			
-			php->_a[0] = a[i];
+			hp._a[0] = a[i];
 			AdjustDown(php->_a, k, 0);
 		}
 
 	}
 	
 	for (int i = 0; i < k; i++)
-		printf("%d", a[i]);
+		printf("%d", hp._a[i]);
 }
